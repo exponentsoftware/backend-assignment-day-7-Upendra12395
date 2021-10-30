@@ -1,16 +1,14 @@
 module.exports = (sequelize, Sequelize) => {
   const Todo = sequelize.define("todo", {
-    userName: {
-        type: Sequelize.STRING
+    id:{
+      type: Sequelize.INTEGER,
+      primaryKey: true
     },
-    title: {
-      type: Sequelize.STRING
+    phone: {
+        type: Sequelize.INTEGER
     },
-    status: {
-      type: Sequelize.STRING
-    },
-    category: {
-      type: Sequelize.STRING
+    cardNo: {
+      type: Sequelize.INTEGER
     }
   });
 
